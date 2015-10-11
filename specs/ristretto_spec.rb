@@ -10,8 +10,6 @@ describe Ristretto do
       Ristretto.execute(parsed_markdown).must_equal "Hello, Ristretto!"
     end
 
-    it "can cope with unbound methods"
-
     it "parsed required ristretto files"
   end
 

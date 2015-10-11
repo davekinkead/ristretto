@@ -10,6 +10,6 @@ module Ristretto
   end
 
   def self.execute(source)
-    eval source
+    instance_eval source
   end
 end
