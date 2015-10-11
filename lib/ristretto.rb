@@ -3,7 +3,7 @@ require "ristretto/version"
 module Ristretto
   def self.parse(file)
     ruby = ''
-    File.read(file).gsub /^    (.*)/ do |match|
+    File.read(file).gsub /^    ([^-+*$].*?)$/ do |match|
       ruby << $1 << "\n"
     end
     ruby.strip
