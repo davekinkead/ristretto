@@ -1,5 +1,11 @@
 require "ristretto/version"
 
 module Ristretto
-  # Your code goes here...
+  def self.parse(file)
+    ruby = ''
+    File.read(file).gsub /^    (.*)/ do |match|
+      ruby << $1 << "\n"
+    end
+    ruby.strip
+  end
 end

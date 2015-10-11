@@ -6,7 +6,6 @@ Literate Ruby inspired by Coffeescript.
 >
 > --  Donald Knuth. "Literate Programming (1984)" in Literate Programming. CSLI, 1992, pg. 99.
 
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -25,7 +24,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Write a blog post or documentation explaining your code in some flavour of markdown.  Include the code as per markdown syntax.
+
+    $ ristretto blog-post.rb.md
+
+Strictly transpile codeblocks. Any codeblock without ````ruby` will be ignored.
+
+    $ ristretto -s blog-post.rb.md
+
+Transpile ristretto into ruby and pipe it to stdout with the `-t` flag.
+
+    $ ristretto -t blog-post-with-code.rb.md > code-from-the-post.rb
+
 
 ## Contributing
 
