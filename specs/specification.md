@@ -1,6 +1,6 @@
 # The Ristretto Specification
 
-This specification doubles the code test for the Ristretto gem.
+This specification doubles the code test for the Ristretto gem.  If it is in here, it should be passing the tests.
 
 ## Indented Codeblocks
 
