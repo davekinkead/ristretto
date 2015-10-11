@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'ristretto'
+
+Ristretto.execute Ristretto.parse(ARGV[0])
