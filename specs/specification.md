@@ -6,20 +6,15 @@ This specification doubles the code test for the Ristretto gem.  If it is in her
 
 Ristretto should parse indented code blocks.  By default, anything inside them will be treated like ruby.
 
-    welcome = "Hello, Ristretto!"
+    espresso = ('coffee' + 'water').bytes.reduce :+
 
-## Multiple Codeblocks
+## Tabbed & Multiple Codeblocks
 
 Multiple blocks should be parsed into a single string with the line termination `\n` character appended after each block.
 
-    # comments
-    welcome
+		ristretto = espresso - 'water'.bytes.reduce(:+)/2
 
 The last resulting code string should be stripped of trailing whitespace.
-
-## Tabbed Codelocks
-
-TODO 
 
 ## Fenced Codeblocks
 

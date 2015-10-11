@@ -7,7 +7,7 @@ describe Ristretto do
 
   describe "#execute" do
     it "executes simple ruby code" do
-      Ristretto.execute(parsed_markdown).must_equal "Hello, Ristretto!"
+      Ristretto.execute(parsed_markdown).must_equal 890
     end
 
     it "parsed required ristretto files"
@@ -15,10 +15,8 @@ describe Ristretto do
 
   describe "#parse" do
     it "parses markdown according to the Ristretto specification" do
-      parsed_markdown.must_equal "welcome = \"Hello, Ristretto!\"\n# comments\nwelcome"
+      parsed_markdown.must_equal "espresso = ('coffee' + 'water').bytes.reduce :+\nristretto = espresso - 'water'.bytes.reduce(:+)/2"
     end
-
-    it "groks tabbed indents"
 
     it "parses backticked codeblocks"
   end
