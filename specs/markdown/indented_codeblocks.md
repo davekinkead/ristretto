@@ -2,9 +2,9 @@
 
 Ristretto should parse indented code blocks.
 
-    p "Hello, Ristretto!"
+    welcome = "Hello, Ristretto!"
 
 And concatinate multiple blocks
 
     # comments
-
+    welcome

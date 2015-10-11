@@ -6,27 +6,23 @@ Literate Ruby inspired by Coffeescript.
 >
 > --  Donald Knuth. "Literate Programming (1984)" in Literate Programming. CSLI, 1992, pg. 99.
 
+
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'ristretto'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Ristretto is designed to work from the command line, so install it with: 
 
     $ gem install ristretto
+
 
 ## Usage
 
 Write a blog post or documentation explaining your code in some flavour of markdown.  Include the code as per markdown syntax.
 
     $ ristretto blog-post.rb.md
+
+Ristretto will parse your markdown and try to execute anything in the codeblocks with ruby.
+
+**TODO**
 
 Strictly transpile codeblocks. Any codeblock without ````ruby` will be ignored.
 

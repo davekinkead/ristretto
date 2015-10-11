@@ -13,7 +13,7 @@ describe Ristretto do
 
   describe "#parse" do
     it "parses markdown indented codeblocks" do
-      indented_codeblocks.must_equal "p \"Hello, Ristretto!\"\n# comments"
+      indented_codeblocks.must_equal "welcome = \"Hello, Ristretto!\"\n# comments\nwelcome"
     end
   end
 end
