@@ -2,7 +2,7 @@
 
 Ristretto should parse indented code blocks.
 
-    p "Hello, World!"
+    p "Hello, Ristretto!"
 
 And concatinate multiple blocks
 

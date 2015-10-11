@@ -8,4 +8,8 @@ module Ristretto
     end
     ruby.strip
   end
+
+  def self.execute(source)
+    eval source
+  end
 end
